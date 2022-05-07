@@ -45,11 +45,11 @@ main .insights > div span {
 }
 
 main .insights > div.expenses span {
-    background: var(--color-danger);
+    background: var(--color-yellow);
 }
 
 main .insights > div.icome span {
-    background: var(--color-success);
+    background: var(--color-yellow);
 }
 
 main .insights > div .middle {
@@ -77,7 +77,7 @@ main .insights svg {
 
 main .insights svg circle {
     fill:none;
-    stroke: var(--color-primary);
+    stroke: #4cb6e3;
     stroke-width: 14;
     stroke-linecap: round;
     transform: translate(5px, 5px);

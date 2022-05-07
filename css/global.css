@@ -15,8 +15,9 @@ html {
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
+    max-width: 1200px;
+    height: 100vh;
+    margin-left: -5px;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
     background: var(--color-background);
@@ -28,7 +29,7 @@ body {
 .container {
 
 display: grid;
-width: 96%;
+width: 100%;
 margin: 0 auto;
 gap: 1.8rem;
 grid-template-columns: 14rem auto 23rem;  
@@ -55,6 +56,7 @@ h1 {
 h2 {
     font-size: 1.4rem;
 }
+
 
 h3 {
     font-size: 0.87rem;
@@ -91,12 +93,22 @@ b {
     color: var(--color-dark);
 }
 
+.green {
+    color: var(--color-green);
+}
+
 .primary {
     color: var(--color-primary);
 }
 
 .danger {
     color: var(--color-danger);
+}
+
+.yellow {
+
+color: var(--color-yellow);
+
 }
 .success {
     color: var(--color-success);
@@ -122,8 +134,9 @@ aside .logo {
 }
 
 aside .logo img {
-    width: 2rem;
-    height: 2rem;
+    margin-left: 33px;
+    width: 4rem;
+    height: 3rem;
 }
 
 aside .close {
@@ -132,7 +145,7 @@ aside .close {
 }
 
 aside .sidebar {
-     display: flex;
+    display: flex;
     flex-direction: column;
     height: 86vh;
     position: relative;
@@ -141,6 +154,10 @@ aside .sidebar {
 
 aside h3 {
     font-weight: 500;
+}
+
+aside h2 .ustore {
+    font-size: 2rem;
 }
 
 aside .sidebar a {
