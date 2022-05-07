@@ -1,5 +1,3 @@
-/*pagina inicial*/
-
 @import url(./css/pagina-inicial.css);
 
 @import url(./css/global.css);
@@ -9,5 +7,7 @@
 @import url(./css/variaveis.css);
 
 @import url(./css/recent-orders.css);
+
+@import url(./css/media-queries.css);
 
 
