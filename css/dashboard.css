@@ -260,9 +260,6 @@ main .insights small {
 .right .sales-analytics .add-product div h3{
     font-weight: 600;
 }
-<<<<<<< HEAD
-
-=======
 /* ================ MEDIA QUERIES =================*/
 
 @media screen and (max-width:1200px) {
@@ -415,4 +412,3 @@ main .insights small {
         }
     }
 } 
->>>>>>> fa8fe234007592b3cf6b4d9a875893841b580a38
