@@ -130,7 +130,15 @@
             z-index: 2;
             box-shadow: 0 1rem 1rem var(--color-light);
         }
-    
+
+        main .date input[type="date"],
+        main .date,
+        .right .top .profile img {
+            display: none;
+            
+        }
+
+         
         .right .top .theme-toggler{
             width: 4.4rem;
             position: absolute;
