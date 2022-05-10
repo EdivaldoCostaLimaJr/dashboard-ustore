@@ -1,10 +1,35 @@
 /* ================ MEDIA QUERIES =================*/
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1320px) {
+
+.container {
+display: grid;
+width: 100%;
+margin: 0 auto;
+gap: 1.8rem;
+grid-template-columns: 14rem auto 20rem;  
+}
+
+}
+
+@media screen and (max-width:1280px) {
+
+    .container {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 20rem;  
+    }
+    
+    }
+
+
+@media screen and (max-width:1230px) {
 
  .container {
         width: 94%;
-        grid-template-columns: 7rem auto 23rem;
+        grid-template-columns: 7rem auto 20rem;
     }
     aside .logo h2{
         display: none;
@@ -39,7 +64,8 @@
     main table tbody tr td:first-child {
         display: nome;
     }
-    
+
+      
     @media screen and (max-width: 800px) {
 
         .container {
@@ -133,11 +159,13 @@
         }
 
         main .date input[type="date"],
-        main .date,
-        .right .top .profile img {
+        main .date   {
+
             display: none;
+        }      
             
-        }
+        .right .top .profile img {
+            align-items: right; }
 
          
         .right .top .theme-toggler{
