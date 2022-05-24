@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login JS</title>
+    <title>Login Ustore</title>
 
     <style>
 
         *{
             box-sizing: border-box;
-        }
-
-        body{
-            width: 100%;
-            height: 100%;
         }
 
         form{
@@ -30,10 +25,36 @@
             height: 30px;
         }
 
+        .bg-animated { 
+            width: 100wh;
+	        height: 67vh;
+            background: #f0f4f5;
+            background: linear-gradient(45deg, #b2b5b6, #eaf4f0, #ffec84, #ecd273,  #f0f4f5);
+            background-size: 400%;
+            -webkit-animation: animaFundo 20s ease infinite;
+            -moz-animation: animaFundo 20s ease infinite;
+            animation: animaFundo 20s ease infinite;
+          }
+
+          @keyframes animaFundo {
+
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+
+}
+
+
     </style>
 
 </head>
-<body>
+<body class="bg-animated">
     
 
     <form>
@@ -55,7 +76,7 @@
             var senha = document.getElementById('senha').value;
 
             if(login == "admin" && senha == "admin"){
-                alert('Sucesso');
+                alert('Bem-vindo');
                 location.href = "index.html";
             }else{
                 alert('Usuario ou senha incorretos');
