@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+
+    <title>Ustore - Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+
+<body>
+    
+<div class="container">
+    <aside>
+        <div class="top">
+            <div class="logo">
+                <img id="logo-dash" src="./images/logo.png">
+                <h2><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>
+
+        
+    <!-------- aside -------->
+        <div class="sidebar">
+            <a href="#"class="active">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">person_outline</span>
+                <h3>Clientes</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">insights</span>
+                <h3>Análise</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">inventory</span>
+                <h3>Produtos</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">settings</span>
+                <h3>Configurações</h3>
+            </a>
+            <a  href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+    </aside>
+
+    <!-------- end of aside --------->
+
+    <main>
+        <h1></h1>
+
+        <div class="date">
+            <input type="date">
+        </div>
+
+        <div class="insights">
+            <div class="caixa1" onclick="modal_1()"> 
+            <div class="sales">
+                <span class="material-icons-sharp">analytics</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Gastos totais</h3>
+                        <h1>$25,024</h1>
+                        
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">últimas 24 horas</small>
+            </div>
+        </div>
+            <!----end of sales ----->
+            <div class="caixa2" onclick="modal_2()">
+            <div class="expenses">
+                <span class="material-icons-sharp">bar_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Gastos produtos</h3>
+                        <h1>$14,160</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>62%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <small class="text-muted">últimas 24 horas</small>
+            </div>
+            
+            <!----end of expense ----->
+            <div class="caixa3" onclick="modal_3()"> 
+            <div class="icome">
+                <span class="material-icons-sharp">stacked_line_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Gastos por provedores</h3>
+                        <h1>$1,864</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>44%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">últimas 24 horas</small>
+            </div>
+        </div>
+            <!----end of icome ----->
+        </div>
+
+
+     <div class="recent-orders">
+         <h2>Produtos Usados</h2>
+         <table>
+             <thead>
+             <tr>
+                 <th>Nome do Produto</th>
+                 <th>Tipo</th>
+                 <th>Ordem</th>
+                 <th>Provedor</th>
+                 <th></th>
+             </tr>
+            </thead>
+
+           <tbody>
+                <tr>
+                    <td>Amazon VPC</td>
+                    <td>Aniversary</td>
+                    <td>#1</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>AWS CloudTrail</td>
+                    <td>Aniversary</td>
+                    <td>#2</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Elastic Compute Cloud</td>
+                    <td>Aniversary</td>
+                    <td>#3</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Dynamo DB</td>
+                    <td>Aniversary</td>
+                    <td>#4</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Cloud Watch</td>
+                    <td>Aniversary</td>
+                    <td>#5</span></td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Systems Manager</td>
+                    <td>Aniversary</td>
+                    <td></span>#6</span></td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+            </tbody> 
+         </table>
+
+       <!-- <a href="#"> mostrar mais</a>-->
+
+     </div>
+    </main>   <!----------- end of main ----------->
+
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span class="material-icons-sharp"> menu </span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-icons-sharp active"> light_mode </span>
+                <span class="material-icons-sharp"> dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class ="info">
+                    <p> Oi, <b> Mari </b></p>
+                    <small class="text-muted">Admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- END OF TOP -->
+        <div class="sales-analytics">
+            <h2>Status</h2>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Amazon Virtual PC</h3>
+                        <small class="text-muted">últimas 24 horas</small>
+                    </div>
+                    <h5 class="success">+39%</h5>
+                    <h3>3849</h3>
+                </div>
+            </div>
+            <div class="item offline">
+                <div class="icon">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Amazon DynamoDB</h3>
+                        <small class="text-muted">últimas 24 horas</small>
+                    </div>
+                    <h5 class="danger">-17%</h5>
+                    <h3>1100</h3>
+                </div>
+            </div>
+            <div class="item Ccustomers">
+                <div class="icon">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Amazon CloudWatch</h3>
+                        <small class="text-muted">últimas 24 horas</small>
+                    </div>
+                    <h5 class="success">+39%</h5>
+                    <h3>849</h3>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="modal_1">
+    <div class="remover_modal_1" onclick="remover_modal_1()"></div>
+</div>
+<div class="modal_2">
+    <div class="remover_modal_2" onclick="remover_modal_2()"></div>
+</div>
+<div class="modal_3">
+    <div class="remover_modal_3" onclick="remover_modal_3()"></div>
+</div>
+
+<script src = "./orders.js"></script>
+<script src = "./dashboard.js"></script>
+
+
+</body>
+
+</html>
