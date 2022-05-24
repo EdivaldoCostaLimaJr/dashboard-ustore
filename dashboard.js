@@ -62,3 +62,25 @@ function modal_3(){
         let fechar = document.querySelector('.modal_3')
         fechar.style.display = 'none';
     }    
+
+
+// login //
+
+<script>
+
+
+function logar(){
+
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    if(login == "admin" && senha == "admin"){
+        alert('Sucesso');
+        location.href = "home.html";
+    }else{
+        alert('Usuario ou senha incorretos');
+    }
+
+}
+
+</script>
