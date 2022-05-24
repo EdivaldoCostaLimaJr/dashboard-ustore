@@ -31,42 +31,25 @@
         
     <!-------- aside -------->
         <div class="sidebar">
-            <a href="#">
+            <a href="#"class="active">
                 <span class="material-icons-sharp">grid_view</span>
                 <h3>Dashboard</h3>
             </a>
-            <a href="#" class="active">
+            <a href="#">
                 <span class="material-icons-sharp">person_outline</span>
                 <h3>Clientes</h3>
             </a>
             <a href="#">
-                <span class="material-icons-sharp">receipt_long</span>
-                <h3>Pedidos</h3>
-            </a>
-            <a href="#">
                 <span class="material-icons-sharp">insights</span>
-                <h3>Analíse</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-sharp">mail_outline</span>
-                <h3>Menssagens</h3>
-                <span class="message-count">26</span>
+                <h3>Análise</h3>
             </a>
             <a href="#">
                 <span class="material-icons-sharp">inventory</span>
                 <h3>Produtos</h3>
             </a>
             <a href="#">
-                <span class="material-icons-sharp">report_gmailerrorred</span>
-                <h3>Chamados</h3>
-            </a>
-            <a href="#">
                 <span class="material-icons-sharp">settings</span>
                 <h3>Configurações</h3>
-            </a>
-           <!--<a href="#">
-                <span class="material-icons-sharp">add</span>
-                <h3>Add Produto</h3>--> 
             </a>
             <a href="#">
                 <span class="material-icons-sharp">logout</span>
@@ -85,6 +68,7 @@
         </div>
 
         <div class="insights">
+            <div class="caixa1" onclick="modal_1()"> 
             <div class="sales">
                 <span class="material-icons-sharp">analytics</span>
                 <div class="middle">
@@ -104,8 +88,9 @@
                 </div>
                 <small class="text-muted">últimas 24 horas</small>
             </div>
+        </div>
             <!----end of sales ----->
-
+            <div class="caixa2" onclick="modal_2()">
             <div class="expenses">
                 <span class="material-icons-sharp">bar_chart</span>
                 <div class="middle">
@@ -122,11 +107,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <small class="text-muted">últimas 24 horas</small>
             </div>
             
             <!----end of expense ----->
-
+            <div class="caixa3" onclick="modal_3()"> 
             <div class="icome">
                 <span class="material-icons-sharp">stacked_line_chart</span>
                 <div class="middle">
@@ -145,6 +131,7 @@
                 </div>
                 <small class="text-muted">últimas 24 horas</small>
             </div>
+        </div>
             <!----end of icome ----->
         </div>
 
@@ -233,42 +220,6 @@
             </div>
         </div>
         <!-- END OF TOP -->
-        <div class="recent-updates">
-            <h2>Dicas Economia</h2>
-            <div class="updates">
-                <div class="update"> 
-                    <div class="profile-photo">
-                        <img src="/images/profile-2.jpg">
-                     </div>
-                    <div class="message">
-                        <p><b>Mari Ana</b> receveid his order of 
-                        Night lion tech GPS drone.</p>
-                        <small class="text-muted"> 2 minutes ago</small>
-                    </div>
-                </div>
-                <div class="update"> 
-                    <div class="profile-photo">
-                        <img src="/images/profile-3.jpg">
-                     </div>
-                    <div class="message">
-                        <p><b>Mari Ana</b> receveid his order of 
-                        Night lion tech GPS drone.</p>
-                        <small class="text-muted"> 2 minutes ago</small>
-                    </div>
-                </div>
-                <div class="update"> 
-                    <div class="profile-photo">
-                        <img src="/images/profile-4.jpg">
-                     </div>
-                    <div class="message">
-                        <p><b>Mari Ana</b> receveid his order of 
-                        Night lion tech GPS drone.</p>
-                        <small class="text-muted"> 2 minutes ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!----------------- END OF RECENT UPDATES ----------------->
         <div class="sales-analytics">
             <h2>Status</h2>
             <div class="item online">
@@ -310,16 +261,22 @@
                     <h3>849</h3>
                 </div>
             </div>
-            <div class="item add-product">
-                <div>
-                    <span class="material-icons-sharp"> add </span>
-                    <h3>Add Product</h3>
-                </div>
+
             </div>
         </div>
     </div>
 
 </div>
+<div class="modal_1">
+    <div class="remover_modal_1" onclick="remover_modal_1()"></div>
+</div>
+<div class="modal_2">
+    <div class="remover_modal_2" onclick="remover_modal_2()"></div>
+</div>
+<div class="modal_3">
+    <div class="remover_modal_3" onclick="remover_modal_3()"></div>
+</div>
+
 <script src = "./orders.js"></script>
 <script src = "./dashboard.js"></script>
 

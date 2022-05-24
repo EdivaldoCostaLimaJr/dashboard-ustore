@@ -37,3 +37,28 @@ Orders.forEach(order=> {
 
 
 })
+
+function modal_1(){
+let modal = document.querySelector('.modal_1')
+modal.style.display = 'block';
+}
+function remover_modal_1(){
+    let fechar = document.querySelector('.modal_1')
+    fechar.style.display = 'none';
+}
+function modal_2(){
+    let modal = document.querySelector('.modal_2')
+    modal.style.display = 'block';
+    }
+    function remover_modal_2(){
+        let fechar = document.querySelector('.modal_2')
+        fechar.style.display = 'none';
+    }
+function modal_3(){
+    let modal = document.querySelector('.modal_3')
+    modal.style.display = 'block';
+    }
+    function remover_modal_3(){
+        let fechar = document.querySelector('.modal_3')
+        fechar.style.display = 'none';
+    }    

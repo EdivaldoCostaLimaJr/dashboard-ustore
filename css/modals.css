@@ -1,0 +1,88 @@
+.caixa1{
+    cursor: pointer;
+}
+.caixa2{
+    cursor: pointer;
+}
+.caixa3{
+    cursor: pointer;
+}
+.modal_1 {
+    width: 900px;
+    height: 500px;
+    background-color: #EBA732;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    animation: animate;
+    animation-duration: 800ms;
+    display: none;
+}
+.modal_1{
+    max-width: 90vw;
+ }
+ .modal_2 {
+    width: 900px;
+    height: 500px;
+    background-color: #EBA732;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    animation: animate;
+    animation-duration: 800ms;
+    display: none;
+}
+.modal_2{
+    max-width: 90vw;
+ }
+ .modal_3 {
+    width: 900px;
+    height: 500px;
+    background-color: #EBA732;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    animation: animate;
+    animation-duration: 800ms;
+    display: none;
+}
+.modal_3{
+    max-width: 90vw;
+ }
+@keyframes animate{
+    from {opacity: 1;}
+    from {opacity: 0;}
+}
+.remover_modal_1 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;  
+    float: right;
+}
+.remover_modal_2 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;  
+    float: right;
+}
+.remover_modal_3 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;  
+    float: right;
+}
