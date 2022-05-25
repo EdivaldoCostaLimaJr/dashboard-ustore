@@ -80,3 +80,9 @@ function modal_3(){
         }
 
     }
+
+    function logout () {
+
+    location.href = "index.html";
+
+    }

@@ -55,8 +55,12 @@ h1 {
 
 h2 {
     font-size: 1.4rem;
+    margin-top: 20px;
 }
 
+ #ustore {
+margin-top: 0px;
+}
 
 h3 {
     font-size: 0.87rem;
@@ -75,10 +79,12 @@ small {
 }
 
 .profile-photo {
+    
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
     overflow: hidden;
+    
 }
 
 .text-muted {

@@ -25,6 +25,7 @@
     justify-content: center;
     background: var(--default-color-index);
     padding: 40px;
+
 }
 
 
@@ -53,12 +54,15 @@
     background-color: var(--default-color-index);
 }
 .container-index .login-form .input-box{
+
     display: flex;
     align-items: center;
     height: 50px;
     width: 100%;
     margin: 10px 0;
     position: relative;
+    border-radius: 5px;
+
 }
 .container-index .login-form .input-box input {
     height: 100%;
@@ -70,6 +74,10 @@
     font-weight: 500;
     border-bottom: 2px solid rgba(0,0,0,0.2);
     transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-right: 8px;
+  
 }
 .container-index .login-form .input-box input:focus,
 .container-index .login-form .input-box input:valid{

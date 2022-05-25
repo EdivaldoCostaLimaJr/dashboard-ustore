@@ -21,7 +21,7 @@
         <div class="top">
             <div class="logo">
                 <img id="logo-dash" src="./images/logo.png">
-                <h2><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
+                <h2 id="ustore"><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
             </div>
             <div class="close" id="close-btn">
                 <span class="material-icons-sharp">close</span>
@@ -53,7 +53,7 @@
             </a>
             <a href="#">
                 <span class="material-icons-sharp">logout</span>
-                <h3>Logout</h3>
+                <h3 onclick="logout(); return false">Logout</h3>
             </a>
         </div>
     </aside>
@@ -73,8 +73,8 @@
                 <span class="material-icons-sharp">analytics</span>
                 <div class="middle">
                     <div class="left">
-                        <h3>Gastos totais</h3>
-                        <h1>$25,024</h1>
+                        <h3>Gastos diários</h3>
+                        <h1>R$1,024</h1>
                         
                     </div>
                     <div class="progress">
@@ -95,8 +95,8 @@
                 <span class="material-icons-sharp">bar_chart</span>
                 <div class="middle">
                     <div class="left">
-                        <h3>Gastos produtos</h3>
-                        <h1>$14,160</h1>
+                        <h3>Gastos Mensais</h3>
+                        <h1>R$24,160</h1>
                     </div>
                     <div class="progress">
                         <svg>
@@ -118,7 +118,7 @@
                 <div class="middle">
                     <div class="left">
                         <h3>Gastos por provedores</h3>
-                        <h1>$1,864</h1>
+                        <h1>R$1,864</h1>
                     </div>
                     <div class="progress">
                         <svg>
@@ -137,7 +137,7 @@
 
 
      <div class="recent-orders">
-         <h2>Produtos Usados</h2>
+         <h2>Gastos por Produtos</h2>
          <table>
              <thead>
              <tr>
@@ -195,6 +195,7 @@
             </tbody> 
          </table>
 
+
        <!-- <a href="#"> mostrar mais</a>-->
 
      </div>
@@ -215,11 +216,13 @@
                     <small class="text-muted">Admin</small>
                 </div>
                 <div class="profile-photo">
-                    <img src="./images/profile-1.jpg">
+                    <img src="./images/profile-4.jpg">
                 </div>
             </div>
         </div>
         <!-- END OF TOP -->
+            
+
         <div class="sales-analytics">
             <h2>Status</h2>
             <div class="item online">
@@ -263,6 +266,30 @@
             </div>
 
             </div>
+
+            <h2>Gastos totais</h2>
+            <div class="insights-r">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Valor</h3>
+                            <h1>R$25,024</h1>
+                            
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">últimas 24 horas</small>
+                </div>
+            </div>
+
         </div>
     </div>
 
