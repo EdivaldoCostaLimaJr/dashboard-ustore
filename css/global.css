@@ -38,6 +38,7 @@ grid-template-columns: 14rem auto 23rem;
 
 a {
     color: var(--color-dark);
+    cursor: pointer;
 
 }
 

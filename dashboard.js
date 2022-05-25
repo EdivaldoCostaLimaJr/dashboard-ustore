@@ -16,7 +16,6 @@ closeBtn.addEventListener('click', () => {
 //change theme
 themeToggler.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme-variables');
-
     themeToggler.querySelector('span').classList.toggle('active');
 
 })
@@ -38,6 +37,7 @@ Orders.forEach(order=> {
 
 })
 
+/*
 function modal_1(){
 let modal = document.querySelector('.modal_1')
 modal.style.display = 'block';
@@ -62,7 +62,7 @@ function modal_3(){
         let fechar = document.querySelector('.modal_3')
         fechar.style.display = 'none';
     }    
-
+*/
 
     // login // 
 
@@ -76,7 +76,7 @@ function modal_3(){
             alert('Bem-vindo');
             location.href = "home.html";
         }else{
-            alert('Usuario ou senha incorretos');
+            alert('Usuário ou senha incorretos');
         }
 
     }
