@@ -12,6 +12,7 @@
     --default-color-index:#EBA732;
 }
 ::selection{
+    
     background-color: var(--default-color-index);
     color: white;
 }
@@ -23,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--default-color-index);
+    background: linear-gradient( #EBA732, rgb(153, 86, 182));
     padding: 40px;
 
 }
@@ -37,6 +38,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 40px 30px;
+    border-radius: 8px;
 }
 .container-index .login-form .title{
     position: relative;

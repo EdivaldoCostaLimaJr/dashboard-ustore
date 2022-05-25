@@ -86,3 +86,7 @@ function modal_3(){
     location.href = "index.html";
 
     }
+
+// manipulação dom //
+
+const dash = document.querySelectorAll ('.dash');
