@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 1.6rem;
-    cursor: pointer;
-    
 }
 
 .insights-r > div {
