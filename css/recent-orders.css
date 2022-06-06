@@ -6,8 +6,8 @@ main .recent-orders {
 main .recent-orders h2  {
     margin-bottom: 0.8rem;
 }
-
-main .recent-orders table {
+main .recent-orders table{
+    margin-bottom: 2rem;
     background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
@@ -15,8 +15,50 @@ main .recent-orders table {
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
     text-align: left;
+    animation: animate;
+    animation-duration:1s
 }
+main .recent-orders #chart1, #chart2{
+    margin-bottom: 2rem;
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: left;
+    animation: animate;
+    animation-duration:1s
+}
+main .recent-orders #chart3{
+    width:250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+main .recent-orders #background3{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: left;
+    animation: animate;
+    animation-duration:1s
+}
+/*main .recent-orders #testando{
+    width:250px;
+    height: 250px;
+    background-color: black;
+}*/
 
+@keyframes animate{
+
+    from{opacity:1;}
+    from{opacity:0;}
+}
 main .recent-orders table:hover {
     box-shadow: none;
 }

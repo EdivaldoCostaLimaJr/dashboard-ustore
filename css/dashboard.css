@@ -2,6 +2,7 @@
 
 main {
     margin-top: 1.4rem;
+
 }
 
 main .date {
@@ -21,11 +22,6 @@ main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
-    
-}
-
-main .cursor {
-    cursor: pointer;
 }
 
 main .insights > div {
@@ -74,7 +70,12 @@ main .insights .progress {
     height: 92px;
     border-radius: 50%;
 }
-
+main .insights #chartpie{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    margin-bottom: 90px;
+}
 main .insights svg {
         width: 7rem;
     height: 7rem;
@@ -115,11 +116,35 @@ main .insights .progress .number {
     justify-content: center;
     align-items: center;
 }
+main .insights .progress #chart3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main .insights small {
     margin-top: 1.3rem;
     display: block;
 
+}
+
+main form #provedores, .meses {
+
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+ 
 }
 
 /* ============= RIGHT ============ */
@@ -197,7 +222,7 @@ main .insights small {
 /* ================== SALES ANALYTICS ===================*/
 
 .right .sales-analytics{
-    margin-top: 2rem;
+    margin-top: 1.8rem;
 }
 
 .right .sales-analytics h2{
@@ -263,14 +288,20 @@ main .insights small {
 .right .sales-analytics .add-product div h3{
     font-weight: 600;
 }
+.cursor{
+ cursor: pointer;
+}
+#table1{
+    display: none;
+}
 #table2{
-    display:none;
-    transition:all 0.3s ease;
+    display: none;
 }
 #table3{
-    display:none;
+    display: none;
 }
+@keyframes animate{
 
-#table4{
-    display:none;
+    from{opacity:1;}
+    from{opacity:0;}
 }

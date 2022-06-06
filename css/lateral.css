@@ -2,15 +2,15 @@
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 1.6rem;
-    cursor: pointer;
-    
-}
-
+    margin-top: -1.7rem;
+    }
+.insights-r h2{
+        margin-bottom: -1.3rem;
+    }
 .insights-r > div {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
-    margin-top: 1rem;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
 }

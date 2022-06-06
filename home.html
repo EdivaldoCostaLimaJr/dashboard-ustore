@@ -7,58 +7,57 @@
 
     <title>Ustore - Dashboard</title>
 
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
-    
 </head>
 
 
 <body>
     
-<div class="container">
-    <aside>
-        <div class="top">
-            <div class="logo">
-                <img id="logo-dash" src="./images/logo.png">
-                <h2 id="ustore"><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img id="logo-dash" src="./images/logo.png">
+                    <h2 id="ustore"><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
             </div>
-            <div class="close" id="close-btn">
-                <span class="material-icons-sharp">close</span>
+    
+            
+        <!-------- aside -------->
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Análise</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Produtos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Configurações</h3>
+                </a>
+               
+                <a onclick="logout()">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3 onclick="logout(); return false">Logout</h3>
+                </a>
+            
             </div>
-        </div>
-
-        
-    <!-------- aside -------->
-        <div class="sidebar">
-            <a href="#" class="active">
-                <span class="material-icons-sharp">grid_view</span>
-                <h3>Dashboard</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-sharp">person_outline</span>
-                <h3>Clientes</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-sharp">insights</span>
-                <h3>Análise</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-sharp">inventory</span>
-                <h3>Produtos</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-sharp">settings</span>
-                <h3>Configurações</h3>
-            </a>
-           
-            <a onclick="logout()">
-                <span class="material-icons-sharp">logout</span>
-                <h3 onclick="logout(); return false">Logout</h3>
-            </a>
-        
-        </div>
-    </aside>
+        </aside>
 
     <!-------- end of aside --------->
 
@@ -71,11 +70,11 @@
 
         <div class="insights">
             
-            <div class="sales cursor" onclick="tabela_1()">
+            <div id="box1" class="cursor" onclick="tabela_1()">
                 <span class="material-icons-sharp">analytics</span>
                 <div class="middle">
                     <div class="left">
-                        <h3>Gastos totais</h3>
+                        <h3>Gastos diários</h3>
                         <h1>R$11,024</h1>
                         
                     </div>
@@ -88,18 +87,29 @@
                         </div>
                     </div>
                 </div>
-                <small class="text-muted">últimas 24 horas</small>
             </div>
         
             <!----end of sales ----->
-            
-            <div class="cursor" onclick="tabela_2()">
-                <div class="expenses">
-            
+            <div id="box2" class="cursor" onclick="tabela_2()">
+            <div class="expenses">
                 <span class="material-icons-sharp">bar_chart</span>
                 <div class="middle">
                     <div class="left">
-                        <h3>Gastos Mensais</h3>
+                        <h3>Gastos mensais</h3>
+                        <form><select class="meses" name="meses">
+                            <option value="Jan">Janeiro</option>
+                            <option value="Fev">Fevereiro</option>
+                            <option value="Mar">Março</option>
+                            <option value="Abr">Abril</option>
+                            <option value="Mai">Maio</option>
+                            <option value="Jun">Junho</option>
+                            <option value="Jul">Julho</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Set">Setembro</option>
+                            <option value="Out">Outubro</option>
+                            <option value="Nov">Novembro</option>
+                            <option value="Dez">Dezembro</option>
+                          </select></form>
                         <h1>R$4,160</h1>
                     </div>
                     <div class="progress">
@@ -112,36 +122,47 @@
                     </div>
                 </div>
             </div>
-                <small class="text-muted">últimas 24 horas</small>
+                <small class="text-muted"></small>
             </div>
             
             <!----end of expense ----->
-            <div class="cursor" onclick="tabela_3()"> 
+            <div id="box3" class="cursor" onclick="tabela_3()"> 
             <div class="icome">
-                <span class="material-icons-sharp">stacked_line_chart</span>
+                <span class="material-icons-sharp">dashboard</span> 
                 <div class="middle">
                     <div class="left">
-                        <h3>Gastos por provedores</h3>
+                        <h3>Gastos Provedores</h3>
+                        <form><select class="meses" name="meses">
+                            <option value="Jan">Janeiro</option>
+                            <option value="Fev">Fevereiro</option>
+                            <option value="Mar">Março</option>
+                            <option value="Abr">Abril</option>
+                            <option value="Mai">Maio</option>
+                            <option value="Jun">Junho</option>
+                            <option value="Jul">Julho</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Set">Setembro</option>
+                            <option value="Out">Outubro</option>
+                            <option value="Nov">Novembro</option>
+                            <option value="Dez">Dezembro</option>
+                          </select></form>
                         <h1>R$2,864</h1>
                     </div>
                     <div class="progress">
-                        <svg>
-                            <circle cx="38" cy="38" r="36"></circle>
-                        </svg>
-                        <div class="number">
-                            <p>44%</p>
+                        <img src="./images/pie-chart.png" id="chartpie">
+                    <div class="number">
                         </div>
                     </div>
                 </div>
-                <small class="text-muted">últimas 24 horas</small>
+                <small class="text-muted"></small>
             </div>
         </div>
             <!----end of icome ----->
         </div>
 
 
-     <div class=" dashcontent recent-orders" id="table1">
-         <h2>Gastos por Produtos [Tabela 1]</h2>
+     <div class=" dashcontent recent-orders" id="table4">
+         <h2>Gastos por Produtos</h2>
          <table>
              <thead>
              <tr>
@@ -198,190 +219,23 @@
                 </tr>
             </tbody> 
          </table>
+         <!--<canvas id="chart1" class="canvas" hidden="hidden"></canvas>-->
         </div>
+        <div class=" dashcontent recent-orders" id="table1">
+            <canvas id="chart1" class="canvas"></canvas>
+           </div>
 
         <div class=" dashcontent recent-orders" id="table2">
-            <h2>Tabela 2</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>Nome do Produto[teste]</th>
-                    <th>Tipo[teste]</th>
-                    <th>Ordem[teste]</th>
-                    <th>Provedor[teste]</th>
-                    <th></th>
-                </tr>
-               </thead>
-   
-              <tbody>
-                   <tr>
-                       <td>TESTE2</td>
-                       <td>TESTE2</td>
-                       <td>#TESTE2</td>
-                       <td class="warning">TESTE2</td>
-                       <td class="primary">TESTE2</td>
-                   </tr>
-                   <tr>
-                       <td>TESTE2</td>
-                       <td>TESTE2</td>
-                       <td>#TESTE2</td>
-                       <td class="warning">TESTE2</td>
-                       <td class="primary">TESTE2</td>
-                   </tr>
-                   <tr>
-                    <td>TESTE2</td>
-                    <td>TESTE2</td>
-                    <td>#TESTE2</td>
-                    <td class="warning">TESTE2</td>
-                    <td class="primary">TESTE2</td>
-                </tr>
-                <tr>
-                    <td>TESTE2</td>
-                    <td>TESTE2</td>
-                    <td>#TESTE2</td>
-                    <td class="warning">TESTE2</td>
-                    <td class="primary">TESTE2</td>
-                </tr>
-                <tr>
-                    <td>TESTE2</td>
-                    <td>TESTE2</td>
-                    <td>#TESTE2</td>
-                    <td class="warning">TESTE2</td>
-                    <td class="primary">TESTE2</td>
-                </tr>
-                <tr>
-                    <td>TESTE2</td>
-                    <td>TESTE2</td>
-                    <td>#TESTE2</td>
-                    <td class="warning">TESTE2</td>
-                    <td class="primary">TESTE2</td>
-                </tr>
-               </tbody> 
-            </table>
-
-
+            <canvas id="chart2" class="canvas" hidden="hidden"></canvas>
+        </div>
+           
        <!-- <a href="#"> mostrar mais</a>-->
-
-     </div>
-
-     <div class=" dashcontent recent-orders" id="table3">
-        <h2>Tabela 3</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome do Produto[teste]</th>
-                    <th>Tipo[teste]</th>
-                    <th>Ordem[teste]</th>
-                    <th>Provedor[teste]</th>
-                    <th></th>
-                </tr>
-           </thead>
-
-          <tbody>
-               <tr>
-                   <td>AAAAAAAAAA</td>
-                   <td>AAAAAAA</td>
-                   <td>#AAAA</td>
-                   <td class="warning">AAAAAA</td>
-                   <td class="primary">AAAAA</td>
-               </tr>
-               <tr>
-                <td>AAAAAAAAAA</td>
-                <td>AAAAAAA</td>
-                <td>#AAAA</td>
-                <td class="warning">AAAAAA</td>
-                <td class="primary">AAAAA</td>
-            </tr>
-            <tr>
-                <td>AAAAAAAAAA</td>
-                <td>AAAAAAA</td>
-                <td>#AAAA</td>
-                <td class="warning">AAAAAA</td>
-                <td class="primary">AAAAA</td>
-            </tr>
-            <tr>
-                <td>AAAAAAAAAA</td>
-                <td>AAAAAAA</td>
-                <td>#AAAA</td>
-                <td class="warning">AAAAAA</td>
-                <td class="primary">AAAAA</td>
-            </tr>
-            <tr>
-                <td>AAAAAAAAAA</td>
-                <td>AAAAAAA</td>
-                <td>#AAAA</td>
-                <td class="warning">AAAAAA</td>
-                <td class="primary">AAAAA</td>
-            </tr>
-            <tr>
-                <td>AAAAAAAAAA</td>
-                <td>AAAAAAA</td>
-                <td>#AAAA</td>
-                <td class="warning">AAAAAA</td>
-                <td class="primary">AAAAA</td>
-            </tr>
-           </tbody> 
-        </table>
-       </div>
-
-     <div class=" dashcontent recent-orders" id="table4">
-        <h2>Tabela 4</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Nome do Produto[teste]</th>
-                <th>Tipo[teste]</th>
-                <th>Ordem[teste]</th>
-                <th>Provedor[teste]</th>
-                <th></th>
-            </tr>
-           </thead>
-
-          <tbody>
-               <tr>
-                   <td>EEEEEE</td>
-                   <td>EEEEEEEEE</td>
-                   <td>#EEEEE</td>
-                   <td class="warning">EEEEEEE</td>
-                   <td class="primary">EEEEEEEE</td>
-               </tr>
-               <tr>
-                <td>EEEEEE</td>
-                <td>EEEEEEEEE</td>
-                <td>#EEEEE</td>
-                <td class="warning">EEEEEEE</td>
-                <td class="primary">EEEEEEEE</td>
-            </tr>
-            <tr>
-                <td>EEEEEE</td>
-                <td>EEEEEEEEE</td>
-                <td>#EEEEE</td>
-                <td class="warning">EEEEEEE</td>
-                <td class="primary">EEEEEEEE</td>
-            </tr>
-            <tr>
-                <td>EEEEEE</td>
-                <td>EEEEEEEEE</td>
-                <td>#EEEEE</td>
-                <td class="warning">EEEEEEE</td>
-                <td class="primary">EEEEEEEE</td>
-            </tr>
-            <tr>
-                <td>EEEEEE</td>
-                <td>EEEEEEEEE</td>
-                <td>#EEEEE</td>
-                <td class="warning">EEEEEEE</td>
-                <td class="primary">EEEEEEEE</td>
-            </tr>
-            <tr>
-                <td>EEEEEE</td>
-                <td>EEEEEEEEE</td>
-                <td>#EEEEE</td>
-                <td class="warning">EEEEEEE</td>
-                <td class="primary">EEEEEEEE</td>
-            </tr>
-           </tbody>
-            </table>
+        
+       <div class=" dashcontent recent-orders" id="table3">
+        <div id="background3">
+        <canvas id="chart3" hidden="hidden"></canvas>
+        </div>
+        </div>
     </main>   <!----------- end of main ----------->
 
     <div class="right">
@@ -395,7 +249,7 @@
             </div>
             <div class="profile">
                 <div class ="info">
-                    <p> Oi, <b> Mari </b></p>
+                    <p> Olá, <b> Usuário </b></p>
                     <small class="text-muted">Admin</small>
                 </div>
                 <div class="profile-photo">
@@ -407,7 +261,7 @@
             
 
         <div class="sales-analytics">
-            <h2>Status</h2>
+            <h2></h2>
             <div class="item online">
                 <div class="icon">
                     <span class="material-icons-sharp">stacked_line_chart</span>
@@ -448,15 +302,16 @@
                 </div>
             </div>
 
-            </div>
+            </div><br><br><br>
 
-            <h2>Gastos diários</h2>
+            
             <div class="insights-r" onclick="tabela_4()">
-                <div class="sales">
+                <h2></h2>
+                <div id="box4" class="cursor">
                     <span class="material-icons-sharp">analytics</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Valor</h3>
+                            <h3>Meta de consumo</h3>
                             <h1>R$524</h1>
                             
                         </div>
@@ -472,14 +327,12 @@
                     <small class="text-muted">últimas 24 horas</small>
                 </div>
             </div>
-
         </div>
     </div>
 
 <!--<script src = "./orders.js"></script>-->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
 <script src = "./dashboard.js"></script>
-
-
 </body>
 
 </html>
