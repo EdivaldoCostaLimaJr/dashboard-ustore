@@ -28,9 +28,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [HTML]
-- [CSS]
-- [Java Script]
-- [Chart JS]
+- HTML
+- CSS
+- Java Script
+- Chart JS
 
 
