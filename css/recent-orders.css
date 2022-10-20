@@ -1,0 +1,103 @@
+
+main .recent-orders {
+    margin-top: 2rem;
+}
+
+main .recent-orders h2  {
+    margin-bottom: 0.8rem;
+}
+main .recent-orders table{
+    margin-bottom: 2rem;
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: left;
+    animation: animate;
+    animation-duration:1s
+}
+main .recent-orders #chart1, #chart2{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+main .recent-orders #chart3{
+    width:300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+main .recent-orders #background3{
+    margin-bottom: 1rem;
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: left;
+    animation: animate;
+    animation-duration:1s
+    
+}
+main .recent-orders #background2{
+    margin-bottom: 1rem;
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: left;
+    animation: animate;
+    animation-duration:1s
+    
+}
+main .recent-orders #background1{
+    margin-bottom: 1rem;
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    text-align: left;
+    animation: animate;
+    animation-duration:1s
+    
+}
+/*main .recent-orders #testando{
+    width:250px;
+    height: 250px;
+    background-color: black;
+}*/
+
+@keyframes animate{
+
+    from{opacity:1;}
+    from{opacity:0;}
+}
+main .recent-orders table:hover {
+    box-shadow: none;
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+
+main .recent-orders a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}

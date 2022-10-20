@@ -1,0 +1,100 @@
+.insights-r {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 1.6rem;
+    margin-top: -1.7rem;
+    }
+.insights-r h2{
+        margin-bottom: -1.3rem;
+    }
+.insights-r > div {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.insights-r > div:hover {
+    box-shadow: none;
+}
+
+.insights-r > div span {
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.insights-r > div.expenses span {
+    background: var(--color-yellow);
+}
+
+.insights-r > div.icome span {
+    background: var(--color-yellow);
+}
+
+.insights-r > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights-r h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.insights-r .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+.insights-r svg {
+        width: 7rem;
+    height: 7rem;
+}
+
+.insights-r svg circle {
+    fill:none;
+    stroke: #4cb6e3;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+
+.insights-r .sales svg circle {
+    stroke-dasharray: 200;
+    stroke-dashoffset: -30;
+}
+
+.insights-r .expenses svg circle {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 20;
+}
+
+.insights-r .icome svg circle {
+    stroke-dasharray: 110;
+    stroke-dashoffset: 35;
+}
+
+.insights-r .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insights-r small {
+    margin-top: 1.3rem;
+    display: block;
+
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+
+    <title>Ustore - Dashboard</title>
+    <link rel="icon" type="imagem/png" href="./images/logoicon.png" />
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img id="logo-dash" src="./images/logo.png">
+                    <h2 id="ustore"><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+    
+        <!-------- aside -------->
+            <div class="sidebar">
+                <a onclick="dashboard()" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3 onclick="settings()">Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Análise</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Produtos</h3>
+                </a>
+               
+                <a onclick="logout()">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            
+            </div>
+        </aside>
+
+    <!-------- end of aside --------->
+
+    <main>
+        <h1></h1>
+
+        <div class="topdiv">
+            <button type="button" class="button">
+            <span class="button__text">Upload CSV</span>
+            <span class="button__icon">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+            </span>
+        </button>
+        </div>
+
+        <div class="insights">
+            
+            <div id="box1" class="cursor" onclick="tabela_1()">
+                <span class="material-icons-sharp">analytics</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Gastos diários</h3>
+                        <div class="date"id="datadash1">
+                            <input type="date"id="datadash2">
+                        </div>
+                        <h1>R$64</h1>
+                    </div>
+                    <div class="progress">
+                        <div class="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <!----end of sales ----->
+            <div id="box2" class="cursor" onclick="tabela_2()">
+            <div class="expenses">
+                <span class="material-icons-sharp">bar_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Gastos mensais</h3>
+                        <form><select class="meses" name="meses">
+                            <option value="Jan">Janeiro</option>
+                            <option value="Fev">Fevereiro</option>
+                            <option value="Mar">Março</option>
+                            <option value="Abr">Abril</option>
+                            <option value="Mai">Maio</option>
+                            <option value="Jun">Junho</option>
+                            <option value="Jul">Julho</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Set">Setembro</option>
+                            <option value="Out">Outubro</option>
+                            <option value="Nov">Novembro</option>
+                            <option value="Dez">Dezembro</option>
+                          </select></form>
+                        <h1>R$4.160</h1>
+                    </div>
+                    <div class="progress">
+                        <div class="number">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <small class="text-muted"></small>
+            </div>
+            
+            <!----end of expense ----->
+            <div id="box3" class="cursor" onclick="tabela_3()"> 
+            <div class="icome">
+                <span class="material-icons-sharp">dashboard</span> 
+                <div class="middle">
+                    <div class="left">
+                        <h3>Gastos provedores</h3>
+                        <form><select class="meses" name="meses">
+                            <option value="Jan">Janeiro</option>
+                            <option value="Fev">Fevereiro</option>
+                            <option value="Mar">Março</option>
+                            <option value="Abr">Abril</option>
+                            <option value="Mai">Maio</option>
+                            <option value="Jun">Junho</option>
+                            <option value="Jul">Julho</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Set">Setembro</option>
+                            <option value="Out">Outubro</option>
+                            <option value="Nov">Novembro</option>
+                            <option value="Dez">Dezembro</option>
+                          </select></form>
+                        <h1>R$2.864</h1>
+                    </div>
+                    <div class="progress">
+                        <img src="./images/pie-chart.png" id="chartpie">
+                    <div class="number">
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted"></small>
+            </div>
+        </div>
+            <!----end of icome ----->
+        </div>
+
+     <div class=" dashcontent recent-orders" id="table4">
+         <h2>Gastos por Produtos</h2>
+         <table>
+             <thead>
+             <tr>
+                 <th>Nome do Produto</th>
+                 <th>Tipo</th>
+                 <th>Ordem</th>
+                 <th>Provedor</th>
+                 <th></th>
+             </tr>
+            </thead>
+
+           <tbody>
+                <tr>
+                    <td>Amazon VPC</td>
+                    <td>Aniversary</td>
+                    <td>#1</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>AWS CloudTrail</td>
+                    <td>Aniversary</td>
+                    <td>#2</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Elastic Compute Cloud</td>
+                    <td>Aniversary</td>
+                    <td>#3</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Dynamo DB</td>
+                    <td>Aniversary</td>
+                    <td>#4</td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Cloud Watch</td>
+                    <td>Aniversary</td>
+                    <td>#5</span></td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+                <tr>
+                    <td>Amazon Systems Manager</td>
+                    <td>Aniversary</td>
+                    <td></span>#6</span></td>
+                    <td class="warning">AWS</td>
+                    <td class="primary">em uso</td>
+                </tr>
+            </tbody> 
+         </table>
+         <!--<canvas id="chart1" class="canvas" hidden="hidden"></canvas>-->
+        </div>
+        <div class=" dashcontent recent-orders" id="table1">
+            <div id="background1">
+            <canvas id="chart1" class="canvas"></canvas>
+        </div>
+           </div>
+
+        <div class=" dashcontent recent-orders" id="table2">
+            <div id="background2">
+            <canvas id="chart2" class="canvas" hidden="hidden"></canvas>
+        </div>
+        </div>
+           
+       <!-- <a href="#"> mostrar mais</a>-->
+        
+       <div class=" dashcontent recent-orders" id="table3">
+        <div id="background3">
+        <canvas id="chart3" hidden="hidden"></canvas>
+        </div>
+        </div>
+    </main>   <!----------- end of main ----------->
+
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span class="material-icons-sharp"> menu </span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-icons-sharp active"> light_mode </span>
+                <span class="material-icons-sharp"> dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class ="info">
+                    <p> Olá, <b> Usuário </b></p>
+                    <small class="text-muted">Admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" id="foto">
+                </div>
+            </div>
+        </div>
+        <!-- END OF TOP -->
+            
+
+        <div class="sales-analytics">
+            <h2></h2>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Amazon Virtual PC</h3>
+                        <small class="text-muted">últimas 24 horas</small>
+                    </div>
+                    <h5 class="success">+39%</h5>
+                    <h3>R$349</h3>
+                </div>
+            </div>
+            <div class="item offline">
+                <div class="icon">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Amazon DynamoDB</h3>
+                        <small class="text-muted">últimas 24 horas</small>
+                    </div>
+                    <h5 class="danger">-17%</h5>
+                    <h3>R$100</h3>
+                </div>
+            </div>
+            <div class="item Ccustomers">
+                <div class="icon">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Amazon CloudWatch</h3>
+                        <small class="text-muted">últimas 24 horas</small>
+                    </div>
+                    <h5 class="success">+39%</h5>
+                    <h3>R$49</h3>
+                </div>
+            </div>
+
+            </div><br><br><br>
+
+            
+            <div class="insights-r" onclick="tabela_4()">
+                <h2></h2>
+                <div id="box4" class="cursor">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Meta de consumo</h3>
+                            <h1>R$524</h1>
+                            
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted"></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--<script src = "./orders.js"></script>-->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+<script src = "./dashboard.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

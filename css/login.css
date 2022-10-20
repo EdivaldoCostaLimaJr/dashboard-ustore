@@ -1,0 +1,125 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --default-color-index:#EBA732;
+}
+::selection{
+    
+    background-color: var(--default-color-index);
+    color: white;
+}
+
+
+#body-login {
+    max-width: 98vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( #EBA732, rgb(153, 86, 182));
+    padding: 40px;
+    margin: 0rem 0rem;
+
+}
+
+
+.container-index {
+    max-width: 850px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 30px;
+    border-radius: 8px;
+}
+.container-index .login-form .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color:#333;
+}
+.container-index .login-form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background-color: var(--default-color-index);
+}
+.container-index .login-form .input-box{
+
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 5px;
+
+}
+.container-index .login-form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-left: -4px;
+    margin-right: 8px;
+  
+}
+.container-index .login-form .input-box input:focus,
+.container-index .login-form .input-box input:valid{
+    border-color: var(--default-color-index);
+}
+.container-index .login-form .input-box input[type="submit"]{
+    background-color: var(--default-color-index);
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container-index .login-form .input-box i{
+   
+    position: absolute;
+    color: var(--default-color-index);
+    font-size: 17px;
+
+}
+.container-index .login-form .forgot a{
+   
+    color: var(--default-color-index);
+    text-decoration: none;
+}
+.container-index .login-form .divider{
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.container-index .login-form .signup-text a{
+    color: var(--default-color-index);
+    text-decoration: none;
+}
+.container-index .login-img{
+    width: 50%;
+}
+@media (max-width:800px){
+    .login-img{
+        display: none;
+    }
+}

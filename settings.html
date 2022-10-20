@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+
+    <title>Ustore - Dashboard</title>
+    <link rel="icon" type="imagem/png" href="./images/logoicon.png" />
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img id="logo-dash" src="./images/logo.png">
+                    <h2 id="ustore"><span class="ustore">Ust</span><span class="yellow ustore">ore</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+    
+        <!-------- aside -------->
+            <div class="sidebar">
+                <a onclick="dashboard()" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3 onclick="settings()">Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Análise</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Produtos</h3>
+                </a>
+               
+                <a onclick="logout()">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            
+            </div>
+        </aside>
+
+    <!-------- end of aside --------->
+    
+<!--<script src = "./orders.js"></script>-->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+<script src = "./dashboard.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

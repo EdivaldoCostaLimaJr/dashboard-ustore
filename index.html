@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Login - Ustore</title>
+    <link rel="icon" type="imagem/png" href="./images/logoicon.png" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body id="body-login">
+    <div class="container-index">
+        <!--Login form-->
+        <div class="login-form">
+            <div class="title">Login</div>
+            <form action="#">
+
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" id="login" placeholder="Insira seu Email" required>
+                </div>
+                
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="senha" placeholder="Insira sua senha" required>
+                </div>
+                <div class="forgot"><a href="#">Esqueceu a senha?</a></div>
+                <div class="input-box">
+                <input type="submit" onclick="logar(); return false" value="Entrar">
+                </div>
+                <div>
+                <div class="signup-text">
+                        Não consegue acessar? <a href="#">Clique aqui.</a>
+                </div>
+                </div>
+            </form>
+        </div>
+        <!--End login form-->
+        <!--Login img-->
+        <div class="login-img">
+            <img src="./images/software-code.png" alt="" width="100%">
+        </div>
+        <!--End Login img-->
+    </div>
+
+    <script src = "./orders.js"></script>
+    <script src = "./dashboard.js"></script>
+
+    
+</body>
+</html>
