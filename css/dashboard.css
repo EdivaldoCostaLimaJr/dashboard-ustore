@@ -368,7 +368,7 @@ main form #provedores, .meses {
     
 .button:active {
         /*background: #006e58;*/
-        background: white;
+        background: rgb(30, 221, 65);
         }
     
 .button__text,
